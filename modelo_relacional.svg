@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1860 1120" width="1860" height="1120">
+<defs>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap");
+    text { font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .mono { font-family: "JetBrains Mono", Consolas, monospace; }
+    .table-title { font-size: 15px; font-weight: 800; fill: #ffffff; letter-spacing: 0.5px; }
+    .table-sub { font-size: 11px; font-weight: 600; fill: rgba(255,255,255,0.85); }
+    .field-text { font-size: 13px; font-weight: 600; fill: #1e293b; }
+    .type-text { font-size: 11px; font-weight: 600; fill: #64748b; }
+    .pk-badge { font-size: 10px; font-weight: 800; fill: #991b1b; }
+    .fk-badge { font-size: 10px; font-weight: 800; fill: #1e40af; }
+    .uq-badge { font-size: 10px; font-weight: 800; fill: #065f46; }
+    .card-label { font-size: 12px; font-weight: 800; fill: #334155; }
+  </style>
+  
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#f8fafc"/>
+    <stop offset="100%" stop-color="#f1f5f9"/>
+  </linearGradient>
+
+  <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.08"/>
+  </filter>
+  
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1.2" fill="#94a3b8" opacity="0.3"/>
+  </pattern>
+</defs>
+<rect width="1860" height="1120" fill="url(#bgGrad)"/>
+<rect width="1860" height="1120" fill="url(#grid)"/>
+<!-- HEADER -->
+<g transform="translate(60, 40)">
+  <rect width="1740" height="92" rx="14" fill="#ffffff" filter="url(#shadow)" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="0" y="0" width="8" height="92" rx="4" fill="#c0392b"/>
+  <text x="35" y="44" font-size="23" font-weight="800" fill="#0f172a" letter-spacing="-0.3px">DIAGRAMA DEL MODELO RELACIONAL — LA BOUTIQUE DEL CERDO</text>
+  <text x="35" y="70" font-size="13" font-weight="600" fill="#64748b">Materia: Bases de Datos · Normalización 3FN · Notación Crow's Foot (Patas de Gallo) · Motor MySQL/MariaDB</text>
+  
+  <!-- Legend Badges -->
+  <g transform="translate(1210, 30)">
+    <rect x="0" y="0" width="105" height="32" rx="6" fill="#fee2e2" stroke="#fca5a5"/>
+    <text x="12" y="21" font-size="11" font-weight="700" fill="#991b1b">🔑 [PK] Primaria</text>
+    
+    <rect x="120" y="0" width="105" height="32" rx="6" fill="#dbeafe" stroke="#93c5fd"/>
+    <text x="132" y="21" font-size="11" font-weight="700" fill="#1e40af">🔗 [FK] Foránea</text>
+    
+    <rect x="240" y="0" width="100" height="32" rx="6" fill="#d1fae5" stroke="#6ee7b7"/>
+    <text x="252" y="21" font-size="11" font-weight="700" fill="#065f46">✨ [UQ] Única</text>
+
+    <rect x="355" y="0" width="125" height="32" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="367" y="21" font-size="11" font-weight="700" fill="#334155">📌 1:N Cardinal</text>
+  </g>
+</g>
+<!-- Table: Usuarios -->
+<g transform="translate(60, 170)" filter="url(#shadow)">
+  <rect width="320" height="256" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <!-- Header with clean rounded top -->
+  <rect width="320" height="52" rx="10" fill="#8b4513"/>
+  <rect y="40" width="320" height="12" fill="#8b4513"/>
+  <text x="18" y="28" class="table-title">USUARIOS</text>
+  <text x="18" y="44" class="table-sub mono">tabla: users</text>
+  
+  <!-- Rows -->
+  <g transform="translate(0, 52)"><rect y="0" width="320" height="28" fill="#ffffff"/><rect x="14" y="5" width="28" height="18" rx="4" fill="#fee2e2"/><text x="21" y="18" class="pk-badge mono">PK</text><text x="50" y="19" class="field-text mono" style="font-weight: 700; fill: #0f172a;">id</text><text x="304" y="19" text-anchor="end" class="type-text mono">INT(11) AUTO_INC</text><line x1="0" y1="28" x2="320" y2="28" stroke="#f1f5f9" stroke-width="1"/><rect y="28" width="320" height="28" fill="#f8fafc"/><circle cx="28" cy="42" r="2.5" fill="#cbd5e1"/><text x="50" y="47" class="field-text mono" style="">name</text><text x="304" y="47" text-anchor="end" class="type-text mono">VARCHAR(100)</text><line x1="0" y1="56" x2="320" y2="56" stroke="#f1f5f9" stroke-width="1"/><rect y="56" width="320" height="28" fill="#ffffff"/><rect x="14" y="61" width="28" height="18" rx="4" fill="#d1fae5"/><text x="21" y="74" class="uq-badge mono">UQ</text><text x="50" y="75" class="field-text mono" style="">email</text><text x="304" y="75" text-anchor="end" class="type-text mono">VARCHAR(150) UNIQUE</text><line x1="0" y1="84" x2="320" y2="84" stroke="#f1f5f9" stroke-width="1"/><rect y="84" width="320" height="28" fill="#f8fafc"/><circle cx="28" cy="98" r="2.5" fill="#cbd5e1"/><text x="50" y="103" class="field-text mono" style="">password</text><text x="304" y="103" text-anchor="end" class="type-text mono">VARCHAR(255)</text><line x1="0" y1="112" x2="320" y2="112" stroke="#f1f5f9" stroke-width="1"/><rect y="112" width="320" height="28" fill="#ffffff"/><circle cx="28" cy="126" r="2.5" fill="#cbd5e1"/><text x="50" y="131" class="field-text mono" style="">role</text><text x="304" y="131" text-anchor="end" class="type-text mono">ENUM('admin','client')</text><line x1="0" y1="140" x2="320" y2="140" stroke="#f1f5f9" stroke-width="1"/><rect y="140" width="320" height="28" fill="#f8fafc"/><circle cx="28" cy="154" r="2.5" fill="#cbd5e1"/><text x="50" y="159" class="field-text mono" style="">created_at</text><text x="304" y="159" text-anchor="end" class="type-text mono">DATETIME</text><line x1="0" y1="168" x2="320" y2="168" stroke="#f1f5f9" stroke-width="1"/><rect y="168" width="320" height="28" fill="#ffffff"/><circle cx="28" cy="182" r="2.5" fill="#cbd5e1"/><text x="50" y="187" class="field-text mono" style="">updated_at</text><text x="304" y="187" text-anchor="end" class="type-text mono">DATETIME</text><line x1="0" y1="196" x2="320" y2="196" stroke="#f1f5f9" stroke-width="1"/>  </g>
+</g>
+<!-- Table: Pedidos -->
+<g transform="translate(500, 170)" filter="url(#shadow)">
+  <rect width="340" height="340" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <!-- Header with clean rounded top -->
+  <rect width="340" height="52" rx="10" fill="#c0392b"/>
+  <rect y="40" width="340" height="12" fill="#c0392b"/>
+  <text x="18" y="28" class="table-title">PEDIDOS</text>
+  <text x="18" y="44" class="table-sub mono">tabla: orders</text>
+  
+  <!-- Rows -->
+  <g transform="translate(0, 52)"><rect y="0" width="340" height="28" fill="#ffffff"/><rect x="14" y="5" width="28" height="18" rx="4" fill="#fee2e2"/><text x="21" y="18" class="pk-badge mono">PK</text><text x="50" y="19" class="field-text mono" style="font-weight: 700; fill: #0f172a;">id</text><text x="324" y="19" text-anchor="end" class="type-text mono">INT(11) AUTO_INC</text><line x1="0" y1="28" x2="340" y2="28" stroke="#f1f5f9" stroke-width="1"/><rect y="28" width="340" height="28" fill="#f8fafc"/><rect x="14" y="33" width="28" height="18" rx="4" fill="#dbeafe"/><text x="21" y="46" class="fk-badge mono">FK</text><text x="50" y="47" class="field-text mono" style="">user_id</text><text x="324" y="47" text-anchor="end" class="type-text mono">INT(11) NULL</text><line x1="0" y1="56" x2="340" y2="56" stroke="#f1f5f9" stroke-width="1"/><rect y="56" width="340" height="28" fill="#ffffff"/><circle cx="28" cy="70" r="2.5" fill="#cbd5e1"/><text x="50" y="75" class="field-text mono" style="">customer_name</text><text x="324" y="75" text-anchor="end" class="type-text mono">VARCHAR(100)</text><line x1="0" y1="84" x2="340" y2="84" stroke="#f1f5f9" stroke-width="1"/><rect y="84" width="340" height="28" fill="#f8fafc"/><circle cx="28" cy="98" r="2.5" fill="#cbd5e1"/><text x="50" y="103" class="field-text mono" style="">customer_phone</text><text x="324" y="103" text-anchor="end" class="type-text mono">VARCHAR(50)</text><line x1="0" y1="112" x2="340" y2="112" stroke="#f1f5f9" stroke-width="1"/><rect y="112" width="340" height="28" fill="#ffffff"/><circle cx="28" cy="126" r="2.5" fill="#cbd5e1"/><text x="50" y="131" class="field-text mono" style="">customer_address</text><text x="324" y="131" text-anchor="end" class="type-text mono">VARCHAR(255)</text><line x1="0" y1="140" x2="340" y2="140" stroke="#f1f5f9" stroke-width="1"/><rect y="140" width="340" height="28" fill="#f8fafc"/><circle cx="28" cy="154" r="2.5" fill="#cbd5e1"/><text x="50" y="159" class="field-text mono" style="">total</text><text x="324" y="159" text-anchor="end" class="type-text mono">DECIMAL(10,2)</text><line x1="0" y1="168" x2="340" y2="168" stroke="#f1f5f9" stroke-width="1"/><rect y="168" width="340" height="28" fill="#ffffff"/><circle cx="28" cy="182" r="2.5" fill="#cbd5e1"/><text x="50" y="187" class="field-text mono" style="">status</text><text x="324" y="187" text-anchor="end" class="type-text mono">VARCHAR(20)</text><line x1="0" y1="196" x2="340" y2="196" stroke="#f1f5f9" stroke-width="1"/><rect y="196" width="340" height="28" fill="#f8fafc"/><circle cx="28" cy="210" r="2.5" fill="#cbd5e1"/><text x="50" y="215" class="field-text mono" style="">notes</text><text x="324" y="215" text-anchor="end" class="type-text mono">TEXT</text><line x1="0" y1="224" x2="340" y2="224" stroke="#f1f5f9" stroke-width="1"/><rect y="224" width="340" height="28" fill="#ffffff"/><circle cx="28" cy="238" r="2.5" fill="#cbd5e1"/><text x="50" y="243" class="field-text mono" style="">items_summary</text><text x="324" y="243" text-anchor="end" class="type-text mono">TEXT</text><line x1="0" y1="252" x2="340" y2="252" stroke="#f1f5f9" stroke-width="1"/><rect y="252" width="340" height="28" fill="#f8fafc"/><circle cx="28" cy="266" r="2.5" fill="#cbd5e1"/><text x="50" y="271" class="field-text mono" style="">created_at</text><text x="324" y="271" text-anchor="end" class="type-text mono">DATETIME</text><line x1="0" y1="280" x2="340" y2="280" stroke="#f1f5f9" stroke-width="1"/>  </g>
+</g>
+<!-- Table: Detalle Pedidos -->
+<g transform="translate(960, 200)" filter="url(#shadow)">
+  <rect width="320" height="228" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <!-- Header with clean rounded top -->
+  <rect width="320" height="52" rx="10" fill="#b03a2e"/>
+  <rect y="40" width="320" height="12" fill="#b03a2e"/>
+  <text x="18" y="28" class="table-title">DETALLE PEDIDOS</text>
+  <text x="18" y="44" class="table-sub mono">tabla: order_items</text>
+  
+  <!-- Rows -->
+  <g transform="translate(0, 52)"><rect y="0" width="320" height="28" fill="#ffffff"/><rect x="14" y="5" width="28" height="18" rx="4" fill="#fee2e2"/><text x="21" y="18" class="pk-badge mono">PK</text><text x="50" y="19" class="field-text mono" style="font-weight: 700; fill: #0f172a;">id</text><text x="304" y="19" text-anchor="end" class="type-text mono">INT(11) AUTO_INC</text><line x1="0" y1="28" x2="320" y2="28" stroke="#f1f5f9" stroke-width="1"/><rect y="28" width="320" height="28" fill="#f8fafc"/><rect x="14" y="33" width="28" height="18" rx="4" fill="#dbeafe"/><text x="21" y="46" class="fk-badge mono">FK</text><text x="50" y="47" class="field-text mono" style="">order_id</text><text x="304" y="47" text-anchor="end" class="type-text mono">INT(11)</text><line x1="0" y1="56" x2="320" y2="56" stroke="#f1f5f9" stroke-width="1"/><rect y="56" width="320" height="28" fill="#ffffff"/><rect x="14" y="61" width="28" height="18" rx="4" fill="#dbeafe"/><text x="21" y="74" class="fk-badge mono">FK</text><text x="50" y="75" class="field-text mono" style="">product_id</text><text x="304" y="75" text-anchor="end" class="type-text mono">INT(11)</text><line x1="0" y1="84" x2="320" y2="84" stroke="#f1f5f9" stroke-width="1"/><rect y="84" width="320" height="28" fill="#f8fafc"/><circle cx="28" cy="98" r="2.5" fill="#cbd5e1"/><text x="50" y="103" class="field-text mono" style="">quantity</text><text x="304" y="103" text-anchor="end" class="type-text mono">INT(11)</text><line x1="0" y1="112" x2="320" y2="112" stroke="#f1f5f9" stroke-width="1"/><rect y="112" width="320" height="28" fill="#ffffff"/><circle cx="28" cy="126" r="2.5" fill="#cbd5e1"/><text x="50" y="131" class="field-text mono" style="">unit_price</text><text x="304" y="131" text-anchor="end" class="type-text mono">DECIMAL(10,2)</text><line x1="0" y1="140" x2="320" y2="140" stroke="#f1f5f9" stroke-width="1"/><rect y="140" width="320" height="28" fill="#f8fafc"/><circle cx="28" cy="154" r="2.5" fill="#cbd5e1"/><text x="50" y="159" class="field-text mono" style="">subtotal</text><text x="304" y="159" text-anchor="end" class="type-text mono">DECIMAL(10,2)</text><line x1="0" y1="168" x2="320" y2="168" stroke="#f1f5f9" stroke-width="1"/>  </g>
+</g>
+<!-- Table: Productos -->
+<g transform="translate(1400, 170)" filter="url(#shadow)">
+  <rect width="330" height="312" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <!-- Header with clean rounded top -->
+  <rect width="330" height="52" rx="10" fill="#c8952c"/>
+  <rect y="40" width="330" height="12" fill="#c8952c"/>
+  <text x="18" y="28" class="table-title">PRODUCTOS</text>
+  <text x="18" y="44" class="table-sub mono">tabla: products</text>
+  
+  <!-- Rows -->
+  <g transform="translate(0, 52)"><rect y="0" width="330" height="28" fill="#ffffff"/><rect x="14" y="5" width="28" height="18" rx="4" fill="#fee2e2"/><text x="21" y="18" class="pk-badge mono">PK</text><text x="50" y="19" class="field-text mono" style="font-weight: 700; fill: #0f172a;">id</text><text x="314" y="19" text-anchor="end" class="type-text mono">INT(11) AUTO_INC</text><line x1="0" y1="28" x2="330" y2="28" stroke="#f1f5f9" stroke-width="1"/><rect y="28" width="330" height="28" fill="#f8fafc"/><circle cx="28" cy="42" r="2.5" fill="#cbd5e1"/><text x="50" y="47" class="field-text mono" style="">name</text><text x="314" y="47" text-anchor="end" class="type-text mono">VARCHAR(150)</text><line x1="0" y1="56" x2="330" y2="56" stroke="#f1f5f9" stroke-width="1"/><rect y="56" width="330" height="28" fill="#ffffff"/><circle cx="28" cy="70" r="2.5" fill="#cbd5e1"/><text x="50" y="75" class="field-text mono" style="">description</text><text x="314" y="75" text-anchor="end" class="type-text mono">TEXT</text><line x1="0" y1="84" x2="330" y2="84" stroke="#f1f5f9" stroke-width="1"/><rect y="84" width="330" height="28" fill="#f8fafc"/><circle cx="28" cy="98" r="2.5" fill="#cbd5e1"/><text x="50" y="103" class="field-text mono" style="">price</text><text x="314" y="103" text-anchor="end" class="type-text mono">DECIMAL(10,2)</text><line x1="0" y1="112" x2="330" y2="112" stroke="#f1f5f9" stroke-width="1"/><rect y="112" width="330" height="28" fill="#ffffff"/><circle cx="28" cy="126" r="2.5" fill="#cbd5e1"/><text x="50" y="131" class="field-text mono" style="">tag</text><text x="314" y="131" text-anchor="end" class="type-text mono">VARCHAR(50)</text><line x1="0" y1="140" x2="330" y2="140" stroke="#f1f5f9" stroke-width="1"/><rect y="140" width="330" height="28" fill="#f8fafc"/><circle cx="28" cy="154" r="2.5" fill="#cbd5e1"/><text x="50" y="159" class="field-text mono" style="">image</text><text x="314" y="159" text-anchor="end" class="type-text mono">VARCHAR(255)</text><line x1="0" y1="168" x2="330" y2="168" stroke="#f1f5f9" stroke-width="1"/><rect y="168" width="330" height="28" fill="#ffffff"/><circle cx="28" cy="182" r="2.5" fill="#cbd5e1"/><text x="50" y="187" class="field-text mono" style="">whatsapp_msg</text><text x="314" y="187" text-anchor="end" class="type-text mono">VARCHAR(255)</text><line x1="0" y1="196" x2="330" y2="196" stroke="#f1f5f9" stroke-width="1"/><rect y="196" width="330" height="28" fill="#f8fafc"/><circle cx="28" cy="210" r="2.5" fill="#cbd5e1"/><text x="50" y="215" class="field-text mono" style="">active</text><text x="314" y="215" text-anchor="end" class="type-text mono">TINYINT(1)</text><line x1="0" y1="224" x2="330" y2="224" stroke="#f1f5f9" stroke-width="1"/><rect y="224" width="330" height="28" fill="#ffffff"/><circle cx="28" cy="238" r="2.5" fill="#cbd5e1"/><text x="50" y="243" class="field-text mono" style="">created_at</text><text x="314" y="243" text-anchor="end" class="type-text mono">DATETIME</text><line x1="0" y1="252" x2="330" y2="252" stroke="#f1f5f9" stroke-width="1"/>  </g>
+</g>
+<!-- Table: Comentarios -->
+<g transform="translate(60, 560)" filter="url(#shadow)">
+  <rect width="320" height="284" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <!-- Header with clean rounded top -->
+  <rect width="320" height="52" rx="10" fill="#d35400"/>
+  <rect y="40" width="320" height="12" fill="#d35400"/>
+  <text x="18" y="28" class="table-title">COMENTARIOS</text>
+  <text x="18" y="44" class="table-sub mono">tabla: comments</text>
+  
+  <!-- Rows -->
+  <g transform="translate(0, 52)"><rect y="0" width="320" height="28" fill="#ffffff"/><rect x="14" y="5" width="28" height="18" rx="4" fill="#fee2e2"/><text x="21" y="18" class="pk-badge mono">PK</text><text x="50" y="19" class="field-text mono" style="font-weight: 700; fill: #0f172a;">id</text><text x="304" y="19" text-anchor="end" class="type-text mono">INT(11) AUTO_INC</text><line x1="0" y1="28" x2="320" y2="28" stroke="#f1f5f9" stroke-width="1"/><rect y="28" width="320" height="28" fill="#f8fafc"/><rect x="14" y="33" width="28" height="18" rx="4" fill="#dbeafe"/><text x="21" y="46" class="fk-badge mono">FK</text><text x="50" y="47" class="field-text mono" style="">user_id</text><text x="304" y="47" text-anchor="end" class="type-text mono">INT(11) NULL</text><line x1="0" y1="56" x2="320" y2="56" stroke="#f1f5f9" stroke-width="1"/><rect y="56" width="320" height="28" fill="#ffffff"/><circle cx="28" cy="70" r="2.5" fill="#cbd5e1"/><text x="50" y="75" class="field-text mono" style="">name</text><text x="304" y="75" text-anchor="end" class="type-text mono">VARCHAR(100)</text><line x1="0" y1="84" x2="320" y2="84" stroke="#f1f5f9" stroke-width="1"/><rect y="84" width="320" height="28" fill="#f8fafc"/><circle cx="28" cy="98" r="2.5" fill="#cbd5e1"/><text x="50" y="103" class="field-text mono" style="">subtitle</text><text x="304" y="103" text-anchor="end" class="type-text mono">VARCHAR(100)</text><line x1="0" y1="112" x2="320" y2="112" stroke="#f1f5f9" stroke-width="1"/><rect y="112" width="320" height="28" fill="#ffffff"/><circle cx="28" cy="126" r="2.5" fill="#cbd5e1"/><text x="50" y="131" class="field-text mono" style="">stars</text><text x="304" y="131" text-anchor="end" class="type-text mono">TINYINT(2)</text><line x1="0" y1="140" x2="320" y2="140" stroke="#f1f5f9" stroke-width="1"/><rect y="140" width="320" height="28" fill="#f8fafc"/><circle cx="28" cy="154" r="2.5" fill="#cbd5e1"/><text x="50" y="159" class="field-text mono" style="">comment</text><text x="304" y="159" text-anchor="end" class="type-text mono">TEXT</text><line x1="0" y1="168" x2="320" y2="168" stroke="#f1f5f9" stroke-width="1"/><rect y="168" width="320" height="28" fill="#ffffff"/><circle cx="28" cy="182" r="2.5" fill="#cbd5e1"/><text x="50" y="187" class="field-text mono" style="">status</text><text x="304" y="187" text-anchor="end" class="type-text mono">VARCHAR(20)</text><line x1="0" y1="196" x2="320" y2="196" stroke="#f1f5f9" stroke-width="1"/><rect y="196" width="320" height="28" fill="#f8fafc"/><circle cx="28" cy="210" r="2.5" fill="#cbd5e1"/><text x="50" y="215" class="field-text mono" style="">created_at</text><text x="304" y="215" text-anchor="end" class="type-text mono">DATETIME</text><line x1="0" y1="224" x2="320" y2="224" stroke="#f1f5f9" stroke-width="1"/>  </g>
+</g>
+<!-- Table: Consultas -->
+<g transform="translate(500, 590)" filter="url(#shadow)">
+  <rect width="340" height="256" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <!-- Header with clean rounded top -->
+  <rect width="340" height="52" rx="10" fill="#2980b9"/>
+  <rect y="40" width="340" height="12" fill="#2980b9"/>
+  <text x="18" y="28" class="table-title">CONSULTAS</text>
+  <text x="18" y="44" class="table-sub mono">tabla: inquiries</text>
+  
+  <!-- Rows -->
+  <g transform="translate(0, 52)"><rect y="0" width="340" height="28" fill="#ffffff"/><rect x="14" y="5" width="28" height="18" rx="4" fill="#fee2e2"/><text x="21" y="18" class="pk-badge mono">PK</text><text x="50" y="19" class="field-text mono" style="font-weight: 700; fill: #0f172a;">id</text><text x="324" y="19" text-anchor="end" class="type-text mono">INT(11) AUTO_INC</text><line x1="0" y1="28" x2="340" y2="28" stroke="#f1f5f9" stroke-width="1"/><rect y="28" width="340" height="28" fill="#f8fafc"/><rect x="14" y="33" width="28" height="18" rx="4" fill="#dbeafe"/><text x="21" y="46" class="fk-badge mono">FK</text><text x="50" y="47" class="field-text mono" style="">user_id</text><text x="324" y="47" text-anchor="end" class="type-text mono">INT(11) NULL</text><line x1="0" y1="56" x2="340" y2="56" stroke="#f1f5f9" stroke-width="1"/><rect y="56" width="340" height="28" fill="#ffffff"/><circle cx="28" cy="70" r="2.5" fill="#cbd5e1"/><text x="50" y="75" class="field-text mono" style="">name</text><text x="324" y="75" text-anchor="end" class="type-text mono">VARCHAR(100)</text><line x1="0" y1="84" x2="340" y2="84" stroke="#f1f5f9" stroke-width="1"/><rect y="84" width="340" height="28" fill="#f8fafc"/><circle cx="28" cy="98" r="2.5" fill="#cbd5e1"/><text x="50" y="103" class="field-text mono" style="">contact</text><text x="324" y="103" text-anchor="end" class="type-text mono">VARCHAR(150)</text><line x1="0" y1="112" x2="340" y2="112" stroke="#f1f5f9" stroke-width="1"/><rect y="112" width="340" height="28" fill="#ffffff"/><circle cx="28" cy="126" r="2.5" fill="#cbd5e1"/><text x="50" y="131" class="field-text mono" style="">message</text><text x="324" y="131" text-anchor="end" class="type-text mono">TEXT</text><line x1="0" y1="140" x2="340" y2="140" stroke="#f1f5f9" stroke-width="1"/><rect y="140" width="340" height="28" fill="#f8fafc"/><circle cx="28" cy="154" r="2.5" fill="#cbd5e1"/><text x="50" y="159" class="field-text mono" style="">status</text><text x="324" y="159" text-anchor="end" class="type-text mono">VARCHAR(20)</text><line x1="0" y1="168" x2="340" y2="168" stroke="#f1f5f9" stroke-width="1"/><rect y="168" width="340" height="28" fill="#ffffff"/><circle cx="28" cy="182" r="2.5" fill="#cbd5e1"/><text x="50" y="187" class="field-text mono" style="">created_at</text><text x="324" y="187" text-anchor="end" class="type-text mono">DATETIME</text><line x1="0" y1="196" x2="340" y2="196" stroke="#f1f5f9" stroke-width="1"/>  </g>
+</g>
+<!-- CONNECTOR LINES -->
+<g stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- 1. users -> orders (1 : 0..N) -->
+  <path d="M 380 250 L 500 250" stroke="#5c2c1a" stroke-width="2.5" fill="none"/>
+  <!-- Crow foot at (500, 250) -->
+  <line x1="488" y1="242" x2="500" y2="250" stroke="#5c2c1a" stroke-width="2.5"/>
+  <line x1="488" y1="258" x2="500" y2="250" stroke="#5c2c1a" stroke-width="2.5"/>
+  <line x1="488" y1="240" x2="488" y2="260" stroke="#5c2c1a" stroke-width="2.5"/>
+  <!-- One symbol at (380, 250) -->
+  <line x1="392" y1="242" x2="392" y2="258" stroke="#5c2c1a" stroke-width="2.5"/>
+  <line x1="398" y1="242" x2="398" y2="258" stroke="#5c2c1a" stroke-width="2.5"/>
+  <!-- Label -->
+  <rect x="408" y="235" width="72" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="444" y="249" text-anchor="middle" class="card-label">1 : 0..N</text>
+
+  <!-- 2. orders -> order_items (1 : 1..N) -->
+  <path d="M 840 280 L 960 280" stroke="#922b21" stroke-width="2.5" fill="none"/>
+  <!-- Crow foot at (960, 280) -->
+  <line x1="948" y1="272" x2="960" y2="280" stroke="#922b21" stroke-width="2.5"/>
+  <line x1="948" y1="288" x2="960" y2="280" stroke="#922b21" stroke-width="2.5"/>
+  <line x1="948" y1="270" x2="948" y2="290" stroke="#922b21" stroke-width="2.5"/>
+  <!-- One symbol at (840, 280) -->
+  <line x1="852" y1="272" x2="852" y2="288" stroke="#922b21" stroke-width="2.5"/>
+  <line x1="858" y1="272" x2="858" y2="288" stroke="#922b21" stroke-width="2.5"/>
+  <!-- Label -->
+  <rect x="868" y="265" width="72" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="904" y="279" text-anchor="middle" class="card-label">1 : 1..N</text>
+
+  <!-- 3. products -> order_items (1 : 0..N) -->
+  <path d="M 1400 300 L 1280 300" stroke="#c8952c" stroke-width="2.5" fill="none"/>
+  <!-- Crow foot at (1280, 300) -->
+  <line x1="1292" y1="292" x2="1280" y2="300" stroke="#c8952c" stroke-width="2.5"/>
+  <line x1="1292" y1="308" x2="1280" y2="300" stroke="#c8952c" stroke-width="2.5"/>
+  <line x1="1292" y1="290" x2="1292" y2="310" stroke="#c8952c" stroke-width="2.5"/>
+  <!-- One symbol at (1400, 300) -->
+  <line x1="1388" y1="292" x2="1388" y2="308" stroke="#c8952c" stroke-width="2.5"/>
+  <line x1="1382" y1="292" x2="1382" y2="308" stroke="#c8952c" stroke-width="2.5"/>
+  <!-- Label -->
+  <rect x="1302" y="285" width="72" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="1338" y="299" text-anchor="middle" class="card-label">1 : 0..N</text>
+
+  <!-- 4. users -> comments (1 : 0..N) -->
+  <path d="M 220 420 L 220 560" stroke="#d35400" stroke-width="2.5" fill="none"/>
+  <!-- Crow foot at (220, 560) -->
+  <line x1="212" y1="550" x2="220" y2="560" stroke="#d35400" stroke-width="2.5"/>
+  <line x1="228" y1="550" x2="220" y2="560" stroke="#d35400" stroke-width="2.5"/>
+  <line x1="210" y1="550" x2="230" y2="550" stroke="#d35400" stroke-width="2.5"/>
+  <!-- One symbol at (220, 420) -->
+  <line x1="212" y1="432" x2="228" y2="432" stroke="#d35400" stroke-width="2.5"/>
+  <line x1="212" y1="438" x2="228" y2="438" stroke="#d35400" stroke-width="2.5"/>
+  <!-- Label -->
+  <rect x="184" y="475" width="72" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="220" y="489" text-anchor="middle" class="card-label">1 : 0..N</text>
+
+  <!-- 5. users -> inquiries (1 : 0..N) -->
+  <path d="M 350 420 L 350 700 L 500 700" stroke="#2980b9" stroke-width="2.5" fill="none"/>
+  <!-- Crow foot at (500, 700) -->
+  <line x1="488" y1="692" x2="500" y2="700" stroke="#2980b9" stroke-width="2.5"/>
+  <line x1="488" y1="708" x2="500" y2="700" stroke="#2980b9" stroke-width="2.5"/>
+  <line x1="488" y1="690" x2="488" y2="710" stroke="#2980b9" stroke-width="2.5"/>
+  <!-- One symbol at (350, 420) -->
+  <line x1="342" y1="432" x2="358" y2="432" stroke="#2980b9" stroke-width="2.5"/>
+  <line x1="342" y1="438" x2="358" y2="438" stroke="#2980b9" stroke-width="2.5"/>
+  <!-- Label -->
+  <rect x="368" y="685" width="72" height="20" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="404" y="699" text-anchor="middle" class="card-label">1 : 0..N</text>
+
+</g>
+<!-- FOOTER NOTE -->
+<g transform="translate(60, 1010)">
+  <rect width="1740" height="70" rx="10" fill="#ffffff" filter="url(#shadow)" stroke="#e2e8f0"/>
+  <text x="30" y="30" font-size="12" font-weight="700" fill="#1e293b">NOTAS TÉCNICAS DE NORMALIZACIÓN:</text>
+  <text x="30" y="50" font-size="11" font-weight="500" fill="#64748b">1. Relación N:M entre PEDIDOS y PRODUCTOS resuelta mediante la entidad débil asociativa "order_items" preservando historial de precios unitarios.</text>
+  <text x="1000" y="50" font-size="11" font-weight="500" fill="#64748b">2. user_id admite valor NULL en orders, comments e inquiries para soportar clientes y visitantes sin registro obligatorio.</text>
+</g>
+</svg>
