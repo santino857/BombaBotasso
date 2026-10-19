@@ -30,10 +30,10 @@ app.forceGlobalSecureRequests = false
 # DATABASE
 #--------------------------------------------------------------------
 
-database.default.hostname = localhost
-database.default.database = tienda_db
-database.default.username = root
-database.default.password = 
+database.default.hostname = bacq0ufktzei6i9azhyq-mysql.services.clever-cloud.com
+database.default.database = bacq0ufktzei6i9azhyq
+database.default.username = un2cxo2pp1fycizf
+database.default.password = un2cxo2pp1fycizf
 database.default.DBDriver = MySQLi
 database.default.DBPrefix =
 database.default.port = 3306
