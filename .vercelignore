@@ -1,0 +1,8 @@
+/writable/*
+!/writable/index.html
+tests/
+phpunit.dist.xml
+*.drawio
+*.png
+*.svg
+test.html

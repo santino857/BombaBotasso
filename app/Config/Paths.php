@@ -87,4 +87,18 @@ class Paths
      * value - the directory should not be publicly accessible.
      */
     public string $envDirectory = __DIR__ . '/../../';
+
+    public function __construct()
+    {
+        // En entornos serverless como Vercel, solo /tmp tiene permisos de escritura
+        if (getenv('VERCEL') || isset($_SERVER['VERCEL']) || isset($_ENV['VERCEL'])) {
+            $tmpWritable = '/tmp/writable';
+            foreach (['cache', 'logs', 'session', 'debugbar', 'uploads'] as $dir) {
+                if (!is_dir($tmpWritable . '/' . $dir)) {
+                    @mkdir($tmpWritable . '/' . $dir, 0777, true);
+                }
+            }
+            $this->writableDirectory = $tmpWritable;
+        }
+    }
 }

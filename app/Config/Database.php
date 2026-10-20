@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => '127.0.0.1',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'tienda_db',
+        'hostname'     => 'bacq0ufktzei6i9azhyq-mysql.services.clever-cloud.com',
+        'username'     => 'un2cxo2pp1fycizf',
+        'password'     => 'un2cxo2pp1fycizf',
+        'database'     => 'bacq0ufktzei6i9azhyq',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
@@ -164,10 +164,10 @@ class Database extends Config
      */
     public array $tests = [
         'DSN'         => '',
-        'hostname'    => 'bacq0ufktzei6i9azhyq-mysql.services.clever-cloud.com',
-        'username'    => 'un2cxo2pp1fycizf',
-        'password'    => 'un2cxo2pp1fycizf',
-        'database'    => 'bacq0ufktzei6i9azhyq',
+        'hostname'    => '127.0.0.1',
+        'username'    => '',
+        'password'    => '',
+        'database'    => ':memory:',
         'DBDriver'    => 'SQLite3',
         'DBPrefix'    => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
         'pConnect'    => false,
