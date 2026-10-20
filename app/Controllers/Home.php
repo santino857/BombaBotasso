@@ -62,10 +62,13 @@ class Home extends BaseController
         $stars = (int) ($this->request->getPost('stars') ?: 5);
         $name  = trim($this->request->getPost('name'));
         $text  = trim($this->request->getPost('comment'));
+        $userId = session()->get('isLoggedIn') ? (int) session()->get('id') : null;
+        $subtitle = session()->get('isLoggedIn') ? 'Cliente Verificado' : 'Cliente';
 
         $this->commentModel->insert([
+            'user_id'    => $userId,
             'name'       => $name,
-            'subtitle'   => session()->get('isLoggedIn') ? 'Cliente Registrado' : 'Cliente',
+            'subtitle'   => $subtitle,
             'stars'      => $stars,
             'comment'    => $text,
             'status'     => 'approved',
@@ -80,7 +83,7 @@ class Home extends BaseController
                     'name'       => esc($name),
                     'stars'      => $stars,
                     'comment'    => esc($text),
-                    'subtitle'   => session()->get('isLoggedIn') ? 'Cliente Registrado' : 'Cliente',
+                    'subtitle'   => $subtitle,
                     'created_at' => 'Ahora mismo'
                 ]
             ]);
@@ -106,7 +109,10 @@ class Home extends BaseController
             return redirect()->back()->withInput()->with('error', 'Por favor completá tu nombre y consulta.');
         }
 
+        $userId = session()->get('isLoggedIn') ? (int) session()->get('id') : null;
+
         $this->inquiryModel->insert([
+            'user_id'    => $userId,
             'name'       => trim($this->request->getPost('nombre')),
             'contact'    => trim($this->request->getPost('contacto') ?: ''),
             'message'    => trim($this->request->getPost('mensaje')),
@@ -140,7 +146,10 @@ class Home extends BaseController
             ])->setStatusCode(400);
         }
 
+        $userId = session()->get('isLoggedIn') ? (int) session()->get('id') : null;
+
         $orderId = $this->orderModel->insert([
+            'user_id'          => $userId,
             'customer_name'    => $customerName,
             'customer_phone'   => $customerPhone,
             'customer_address' => $customerAddress,
@@ -151,6 +160,24 @@ class Home extends BaseController
             'created_at'       => date('Y-m-d H:i:s'),
             'updated_at'       => date('Y-m-d H:i:s'),
         ]);
+
+        // Guardar cada producto en la tabla asociativa order_items
+        $itemsRaw = $this->request->getPost('items');
+        if (!empty($itemsRaw)) {
+            $items = is_string($itemsRaw) ? json_decode($itemsRaw, true) : $itemsRaw;
+            if (is_array($items)) {
+                $orderItemModel = new \App\Models\OrderItemModel();
+                foreach ($items as $item) {
+                    $orderItemModel->insert([
+                        'order_id'   => $orderId,
+                        'product_id' => !empty($item['id']) ? (int) $item['id'] : null,
+                        'quantity'   => !empty($item['qty']) ? (int) $item['qty'] : 1,
+                        'unit_price' => !empty($item['price']) ? (float) $item['price'] : 0.00,
+                        'subtotal'   => (!empty($item['qty']) && !empty($item['price'])) ? (float) ($item['qty'] * $item['price']) : 0.00,
+                    ]);
+                }
+            }
+        }
 
         return $this->response->setJSON([
             'status'   => 'success',

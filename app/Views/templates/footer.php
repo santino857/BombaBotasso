@@ -222,6 +222,7 @@
       formData.append('notes', notes);
       formData.append('items_summary', itemsSummary);
       formData.append('total', total);
+      formData.append('items', JSON.stringify(cart));
 
       fetch('<?= base_url('pedidos/guardar') ?>', {
         method: 'POST',

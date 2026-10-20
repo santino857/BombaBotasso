@@ -19,6 +19,10 @@ $routes->get('login', 'Auth::login');
 $routes->post('login', 'Auth::processLogin');
 $routes->get('logout', 'Auth::logout');
 
+// Client Portal (Protected by AuthFilter)
+$routes->get('mis-pedidos', 'Orders::myOrders', ['filter' => 'auth']);
+$routes->get('mis-pedidos/detalle/(:num)', 'Orders::orderDetails/$1', ['filter' => 'auth']);
+
 // Admin Panel (Protected by AdminFilter)
 $routes->group('admin', ['filter' => 'admin'], static function ($routes) {
     $routes->get('/', 'Admin::index');

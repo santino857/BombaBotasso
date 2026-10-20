@@ -33,6 +33,9 @@
         </button>
         
         <?php if (session()->get('isLoggedIn')): ?>
+          <a href="<?= base_url('mis-pedidos') ?>" class="user-orders-link" title="Mis Pedidos">
+            <i class="fas fa-receipt"></i> Mis Pedidos
+          </a>
           <?php if (session()->get('role') === 'admin'): ?>
             <a href="<?= base_url('admin') ?>" class="admin-nav-link" title="Panel de Administración">
               <i class="fas fa-shield-alt"></i> Panel Admin
@@ -69,6 +72,9 @@
         <i class="fas fa-shopping-basket"></i> Mi Pedido (<span id="cartCountTextMobile">0</span>)
       </a>
       <?php if (session()->get('isLoggedIn')): ?>
+        <a href="<?= base_url('mis-pedidos') ?>" onclick="closeMobile()" style="color: var(--dorado-cl);">
+          <i class="fas fa-receipt"></i> Mis Pedidos
+        </a>
         <?php if (session()->get('role') === 'admin'): ?>
           <a href="<?= base_url('admin') ?>" onclick="closeMobile()" style="color: var(--dorado-cl);">
             <i class="fas fa-shield-alt"></i> Panel de Administración
