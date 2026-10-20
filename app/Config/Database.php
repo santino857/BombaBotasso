@@ -28,7 +28,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => 'bacq0ufktzei6i9azhyq-mysql.services.clever-cloud.com',
         'username'     => 'un2cxo2pp1fycizf',
-        'password'     => 'un2cxo2pp1fycizf',
+        'password'     => 'TNTEzbIMs9GsRKMAU3ez',
         'database'     => 'bacq0ufktzei6i9azhyq',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
@@ -166,7 +166,7 @@ class Database extends Config
         'DSN'         => '',
         'hostname'    => '127.0.0.1',
         'username'    => '',
-        'password'    => 'TNTEzbIMs9GsRKMAU3ez',
+        'password'    => '',
         'database'    => ':memory:',
         'DBDriver'    => 'SQLite3',
         'DBPrefix'    => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
