@@ -23,7 +23,9 @@ class App extends BaseConfig
         parent::__construct();
 
         if (PHP_SAPI !== 'cli' && isset($_SERVER['HTTP_HOST'])) {
-            $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+            $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+                || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
+            $scheme = $isHttps ? 'https' : 'http';
             $scriptDir = dirname($_SERVER['SCRIPT_NAME'] ?? '');
             $scriptDir = rtrim(str_replace('\\', '/', $scriptDir), '/');
             $this->baseURL = $scheme . '://' . $_SERVER['HTTP_HOST'] . ($scriptDir !== '' ? $scriptDir . '/' : '/');

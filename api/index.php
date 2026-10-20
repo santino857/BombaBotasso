@@ -4,6 +4,11 @@
 $_SERVER['SCRIPT_NAME'] = '/index.php';
 $_SERVER['PHP_SELF']    = '/index.php';
 
+// Detectar HTTPS en entornos detrás de proxy inverso como Vercel
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
+
 // Cargar variables desde el archivo 'env' si no existe '.env' (ya que .env suele ignorarse en git)
 $envFile = __DIR__ . '/../env';
 if (!file_exists(__DIR__ . '/../.env') && file_exists($envFile)) {
