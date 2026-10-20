@@ -179,7 +179,14 @@
                   <tr>
                     <td>#<?= $o['id'] ?></td>
                     <td><small><?= date('d/m/Y H:i', strtotime($o['created_at'])) ?></small></td>
-                    <td><strong><?= esc($o['customer_name']) ?></strong></td>
+                    <td>
+                      <strong><?= esc($o['customer_name']) ?></strong>
+                      <?php if (!empty($o['user_id'])): ?>
+                        <br/><span style="font-size:0.75rem; background: #e8f4fd; color: #1e88e5; padding: 2px 6px; border-radius: 4px; display: inline-block; margin-top: 3px;">
+                          <i class="fas fa-user-check"></i> Usuario #<?= $o['user_id'] ?> (<?= esc($o['user_account_name'] ?? 'Registrado') ?>)
+                        </span>
+                      <?php endif; ?>
+                    </td>
                     <td>
                       <?php if (!empty($o['customer_phone'])): ?>
                         <a href="https://wa.me/<?= preg_replace('/\D/', '', $o['customer_phone']) ?>" target="_blank" class="admin-wa-link">
@@ -261,6 +268,11 @@
                     <td>
                       <strong><?= esc($cm['name']) ?></strong>
                       <span class="badge badge-light"><?= esc($cm['subtitle'] ?? 'Cliente') ?></span>
+                      <?php if (!empty($cm['user_id'])): ?>
+                        <br/><span style="font-size:0.72rem; background: #e8f4fd; color: #1e88e5; padding: 1px 5px; border-radius: 4px; display: inline-block; margin-top: 2px;">
+                          <i class="fas fa-check-circle"></i> Cuenta #<?= $cm['user_id'] ?>
+                        </span>
+                      <?php endif; ?>
                     </td>
                     <td><span class="stars-gold"><?= str_repeat('★', (int) $cm['stars']) ?></span></td>
                     <td><p class="admin-desc-snippet">"<?= esc($cm['comment']) ?>"</p></td>
@@ -320,7 +332,14 @@
                   <tr>
                     <td>#<?= $inq['id'] ?></td>
                     <td><small><?= date('d/m/Y H:i', strtotime($inq['created_at'])) ?></small></td>
-                    <td><strong><?= esc($inq['name']) ?></strong></td>
+                    <td>
+                      <strong><?= esc($inq['name']) ?></strong>
+                      <?php if (!empty($inq['user_id'])): ?>
+                        <br/><span style="font-size:0.72rem; background: #e8f4fd; color: #1e88e5; padding: 1px 5px; border-radius: 4px; display: inline-block; margin-top: 2px;">
+                          <i class="fas fa-user-check"></i> Usuario #<?= $inq['user_id'] ?>
+                        </span>
+                      <?php endif; ?>
+                    </td>
                     <td><?= esc($inq['contact'] ?: 'No especificado') ?></td>
                     <td><p class="admin-desc-snippet"><?= esc($inq['message']) ?></p></td>
                     <td>

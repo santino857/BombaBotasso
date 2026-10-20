@@ -27,11 +27,26 @@ class Admin extends BaseController
 
     public function index()
     {
+        $orders = $this->orderModel->select('orders.*, users.name as user_account_name, users.email as user_account_email')
+                                   ->join('users', 'users.id = orders.user_id', 'left')
+                                   ->orderBy('orders.id', 'DESC')
+                                   ->findAll();
+
+        $comments = $this->commentModel->select('comments.*, users.name as user_account_name, users.email as user_account_email')
+                                       ->join('users', 'users.id = comments.user_id', 'left')
+                                       ->orderBy('comments.id', 'DESC')
+                                       ->findAll();
+
+        $inquiries = $this->inquiryModel->select('inquiries.*, users.name as user_account_name, users.email as user_account_email')
+                                         ->join('users', 'users.id = inquiries.user_id', 'left')
+                                         ->orderBy('inquiries.id', 'DESC')
+                                         ->findAll();
+
         $data = [
             'products'      => $this->productModel->orderBy('id', 'DESC')->findAll(),
-            'comments'      => $this->commentModel->orderBy('id', 'DESC')->findAll(),
-            'inquiries'     => $this->inquiryModel->orderBy('id', 'DESC')->findAll(),
-            'orders'        => $this->orderModel->orderBy('id', 'DESC')->findAll(),
+            'comments'      => $comments,
+            'inquiries'     => $inquiries,
+            'orders'        => $orders,
             'users'         => $this->userModel->orderBy('id', 'DESC')->findAll(),
             'productCount'  => $this->productModel->countAllResults(),
             'commentCount'  => $this->commentModel->countAllResults(),
