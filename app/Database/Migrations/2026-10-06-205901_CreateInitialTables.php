@@ -57,6 +57,11 @@ class CreateInitialTables extends Migration
                     'unsigned'       => true,
                     'auto_increment' => true,
                 ],
+                'code_int' => [
+                    'type'       => 'INT',
+                    'constraint' => 11,
+                    'null'       => true,
+                ],
                 'name' => [
                     'type'       => 'VARCHAR',
                     'constraint' => 150,
@@ -73,7 +78,12 @@ class CreateInitialTables extends Migration
                 'tag' => [
                     'type'       => 'VARCHAR',
                     'constraint' => 50,
-                    'default'    => 'Fresco',
+                    'default'    => 'Cortes',
+                ],
+                'category' => [
+                    'type'       => 'VARCHAR',
+                    'constraint' => 100,
+                    'null'       => true,
                 ],
                 'image' => [
                     'type'       => 'VARCHAR',

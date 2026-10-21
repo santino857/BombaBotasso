@@ -92,6 +92,7 @@
             <thead>
               <tr>
                 <th>ID</th>
+                <th>Cód.</th>
                 <th>Imagen</th>
                 <th>Nombre</th>
                 <th>Categoría / Tag</th>
@@ -105,6 +106,7 @@
                 <?php foreach ($products as $p): ?>
                   <tr>
                     <td>#<?= $p['id'] ?></td>
+                    <td><strong><?= esc($p['code_int'] ?? '-') ?></strong></td>
                     <td>
                       <img src="<?= base_url('assets/img/' . $p['image']) ?>" 
                            alt="<?= esc($p['name']) ?>" 
@@ -113,6 +115,9 @@
                     </td>
                     <td>
                       <strong><?= esc($p['name']) ?></strong>
+                      <?php if (!empty($p['category'])): ?>
+                        <br/><small style="color:var(--gris-med);"><?= esc($p['category']) ?></small>
+                      <?php endif; ?>
                       <p class="admin-desc-snippet"><?= esc($p['description']) ?></p>
                     </td>
                     <td><span class="producto-tag"><?= esc($p['tag']) ?></span></td>
@@ -443,27 +448,38 @@
       <input type="hidden" id="productId" name="id" value="" />
 
       <div class="form-row">
+        <div class="form-group" style="max-width: 140px;">
+          <label for="prodCodeInt">Cód. Interno</label>
+          <input type="number" id="prodCodeInt" name="code_int" placeholder="Ej: 1" />
+        </div>
         <div class="form-group">
           <label for="prodName">Nombre del Producto *</label>
-          <input type="text" id="prodName" name="name" required placeholder="Ej: Costillas Especiales" />
+          <input type="text" id="prodName" name="name" required placeholder="Ej: Bondiola" />
         </div>
         <div class="form-group">
           <label for="prodPrice">Precio ($ ARS) *</label>
-          <input type="number" step="0.01" id="prodPrice" name="price" required placeholder="Ej: 8500" />
+          <input type="number" step="0.01" id="prodPrice" name="price" required placeholder="Ej: 11500" />
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label for="prodTag">Categoría / Etiqueta *</label>
+          <label for="prodCategory">Categoría / Sección</label>
+          <input type="text" id="prodCategory" name="category" placeholder="Ej: Carnicería - Cortes" />
+        </div>
+        <div class="form-group">
+          <label for="prodTag">Etiqueta / Tag *</label>
           <select id="prodTag" name="tag" required class="admin-select">
+            <option value="Cortes">Cortes</option>
+            <option value="Embutidos">Embutidos</option>
+            <option value="Fiambres">Fiambres</option>
+            <option value="Preparados">Preparados</option>
+            <option value="Despensa">Despensa</option>
+            <option value="Pastas">Pastas</option>
+            <option value="Parrilla">Parrilla</option>
+            <option value="Condimentos">Condimentos</option>
             <option value="Fresco">Fresco</option>
             <option value="Artesanal">Artesanal</option>
-            <option value="Selección">Selección</option>
-            <option value="De la casa">De la casa</option>
-            <option value="Parrilla">Parrilla</option>
-            <option value="A pedido">A pedido</option>
-            <option value="Listo para cocinar">Listo para cocinar</option>
           </select>
         </div>
         <div class="form-group">
@@ -525,6 +541,8 @@
     document.getElementById('productForm').action = '<?= base_url('admin/productos/crear') ?>';
     document.getElementById('productForm').reset();
     document.getElementById('productId').value = '';
+    document.getElementById('prodCodeInt').value = '';
+    document.getElementById('prodCategory').value = '';
     document.getElementById('prodActive').checked = true;
 
     const overlay = document.getElementById('productModalOverlay');
@@ -536,7 +554,9 @@
     document.getElementById('productModalTitle').textContent = 'Editar Producto #' + p.id;
     document.getElementById('productForm').action = '<?= base_url('admin/productos/editar/') ?>' + p.id;
     document.getElementById('productId').value = p.id;
+    document.getElementById('prodCodeInt').value = p.code_int || '';
     document.getElementById('prodName').value = p.name;
+    document.getElementById('prodCategory').value = p.category || '';
     document.getElementById('prodPrice').value = p.price;
     document.getElementById('prodTag').value = p.tag;
     document.getElementById('prodImage').value = p.image || '';

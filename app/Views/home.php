@@ -58,55 +58,83 @@
   <!-- PRODUCTOS -->
   <section class="productos" id="productos">
     <div class="section-header">
-      <span class="section-tag">Nuestra selección artesanal</span>
-      <h2>Productos <em>Destacados</em></h2>
-      <p>Todo lo que necesitás para una mesa generosa, con la calidad y frescura de siempre.</p>
+      <span class="section-tag">Lista de Precios y Cortes Seleccionados</span>
+      <h2>Nuestros <em>Productos</em></h2>
+      <p>Todos nuestros cortes de cerdo frescos, embutidos artesanales, fiambres de campo, elaborados y productos de despensa.</p>
+    </div>
+
+    <!-- BUSCADOR RÁPIDO DE PRODUCTOS -->
+    <div class="productos-search-wrap">
+      <i class="fas fa-search productos-search-icon"></i>
+      <input type="text" id="productSearchInput" class="productos-search-input" placeholder="Buscar por corte o producto (ej: bondiola, costilla, salame, queso...)" oninput="filterAndSearchProducts()" />
     </div>
 
     <!-- FILTROS DE CATEGORÍA -->
     <div class="productos-filter-bar">
-      <button type="button" class="filter-btn active" onclick="filterProducts('todos')">Todos</button>
-      <button type="button" class="filter-btn" onclick="filterProducts('fresco')">Frescos</button>
-      <button type="button" class="filter-btn" onclick="filterProducts('artesanal')">Artesanales</button>
-      <button type="button" class="filter-btn" onclick="filterProducts('parrilla')">Parrilla</button>
-      <button type="button" class="filter-btn" onclick="filterProducts('seleccion')">Embutidos</button>
-      <button type="button" class="filter-btn" onclick="filterProducts('listo para cocinar')">Listos</button>
+      <button type="button" class="filter-btn active" data-filter="todos" onclick="setCategoryFilter('todos')">Todos (<?= count($products) ?>)</button>
+      <button type="button" class="filter-btn" data-filter="cortes" onclick="setCategoryFilter('cortes')">Cortes de Cerdo</button>
+      <button type="button" class="filter-btn" data-filter="embutidos" onclick="setCategoryFilter('embutidos')">Embutidos</button>
+      <button type="button" class="filter-btn" data-filter="fiambres" onclick="setCategoryFilter('fiambres')">Fiambres</button>
+      <button type="button" class="filter-btn" data-filter="preparados" onclick="setCategoryFilter('preparados')">Preparados</button>
+      <button type="button" class="filter-btn" data-filter="despensa" onclick="setCategoryFilter('despensa')">Despensa y Quesos</button>
+      <button type="button" class="filter-btn" data-filter="pastas" onclick="setCategoryFilter('pastas')">Pastas</button>
+      <button type="button" class="filter-btn" data-filter="parrilla" onclick="setCategoryFilter('parrilla')">Parrilla</button>
+      <button type="button" class="filter-btn" data-filter="condimentos" onclick="setCategoryFilter('condimentos')">Sales y Especias</button>
     </div>
 
     <div class="productos-grid" id="productosGrid">
       <?php if (!empty($products)): ?>
         <?php foreach ($products as $prod): ?>
-          <article class="producto-card" data-category="<?= esc(strtolower($prod['tag'])) ?>">
+          <article class="producto-card" 
+                   data-category="<?= esc(strtolower($prod['tag'])) ?>" 
+                   data-name="<?= esc(mb_strtolower($prod['name'], 'UTF-8')) ?>" 
+                   data-desc="<?= esc(mb_strtolower($prod['description'] ?? '', 'UTF-8')) ?>"
+                   data-code="<?= esc($prod['code_int'] ?? '') ?>">
             <div class="producto-img-container">
               <?php 
                 $imgSrc = !empty($prod['image']) ? base_url('assets/img/' . $prod['image']) : base_url('assets/img/img 2.jpg');
               ?>
               <img src="<?= $imgSrc ?>" alt="<?= esc($prod['name']) ?>" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80';" />
               <span class="producto-tag-badge"><?= esc($prod['tag']) ?></span>
+              <?php if (!empty($prod['code_int'])): ?>
+                <span class="producto-code-badge">Cód. #<?= esc($prod['code_int']) ?></span>
+              <?php endif; ?>
             </div>
             
             <div class="producto-card-body">
               <h3><?= esc($prod['name']) ?></h3>
+              <?php if (!empty($prod['category'])): ?>
+                <small style="display:block; color:var(--dorado); font-size:0.75rem; font-weight:600; text-transform:uppercase; margin-top:-0.3rem; margin-bottom:0.5rem; letter-spacing:0.5px;">
+                  <?= esc($prod['category']) ?>
+                </small>
+              <?php endif; ?>
               <p><?= esc($prod['description']) ?></p>
               
               <div class="producto-price-wrap">
-                <span class="price-val">$ <?= number_format($prod['price'], 0, ',', '.') ?></span>
-                <span class="price-note">por kg aprox.</span>
+                <?php if ($prod['price'] > 0): ?>
+                  <span class="price-val">$ <?= number_format($prod['price'], 0, ',', '.') ?></span>
+                  <span class="price-note">por kg / un. aprox.</span>
+                <?php else: ?>
+                  <span class="price-val" style="font-size: 1.15rem; color: var(--rojo);">Consultar Precio</span>
+                  <span class="price-note">a pedido</span>
+                <?php endif; ?>
               </div>
 
               <div class="producto-actions">
-                <button type="button" 
-                        class="btn btn-primary btn-add-cart" 
-                        onclick="addToCart(<?= $prod['id'] ?>, '<?= esc($prod['name']) ?>', <?= $prod['price'] ?>, '<?= esc($prod['tag']) ?>')">
-                  <i class="fas fa-cart-plus"></i> Agregar al Pedido
-                </button>
+                <?php if ($prod['price'] > 0): ?>
+                  <button type="button" 
+                          class="btn btn-primary btn-add-cart" 
+                          onclick="addToCart(<?= $prod['id'] ?>, '<?= esc($prod['name']) ?>', <?= $prod['price'] ?>, '<?= esc($prod['tag']) ?>')">
+                    <i class="fas fa-cart-plus"></i> Agregar al Pedido
+                  </button>
+                <?php endif; ?>
 
                 <?php 
                   $msg = !empty($prod['whatsapp_msg']) ? $prod['whatsapp_msg'] : 'Hola! Quisiera pedir ' . $prod['name'];
                   $waLink = "https://wa.me/5493571523376?text=" . urlencode($msg);
                 ?>
-                <a href="<?= $waLink ?>" target="_blank" class="btn btn-whatsapp btn-card-wa" title="Pedir directo por WhatsApp">
-                  <i class="fab fa-whatsapp"></i> Pedir
+                <a href="<?= $waLink ?>" target="_blank" class="btn btn-whatsapp btn-card-wa" style="<?= $prod['price'] <= 0 ? 'width: 100%; justify-content: center;' : '' ?>" title="Pedir directo por WhatsApp">
+                  <i class="fab fa-whatsapp"></i> <?= $prod['price'] > 0 ? 'Pedir' : 'Consultar por WhatsApp' ?>
                 </a>
               </div>
 
@@ -320,22 +348,51 @@
     </div>
   </section>
 
-  <!-- SCRIPT PARA FILTRO DE PRODUCTOS -->
+  <!-- SCRIPT PARA FILTRO Y BÚSQUEDA DE PRODUCTOS -->
   <script>
-    function filterProducts(cat) {
-      const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
+    let currentCategory = 'todos';
 
+    function setCategoryFilter(cat) {
+      currentCategory = cat.toLowerCase();
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        if (btn.dataset.filter === cat) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      filterAndSearchProducts();
+    }
+
+    function filterAndSearchProducts() {
+      const searchInput = document.getElementById('productSearchInput');
+      const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
       const cards = document.querySelectorAll('.producto-card');
+
       cards.forEach(card => {
-        const cardCat = card.dataset.category || '';
-        if (cat === 'todos' || cardCat.includes(cat)) {
+        const cardCat = (card.dataset.category || '').toLowerCase();
+        const cardName = (card.dataset.name || '').toLowerCase();
+        const cardDesc = (card.dataset.desc || '').toLowerCase();
+        const cardCode = (card.dataset.code || '').toLowerCase();
+
+        const matchesCat = (currentCategory === 'todos' || cardCat.includes(currentCategory));
+        const matchesQuery = query === '' || 
+                             cardName.includes(query) || 
+                             cardDesc.includes(query) || 
+                             cardCode.includes(query);
+
+        if (matchesCat && matchesQuery) {
           card.style.display = 'flex';
         } else {
           card.style.display = 'none';
         }
       });
+    }
+
+    // Compatibilidad por si se llama filterProducts
+    function filterProducts(cat) {
+      setCategoryFilter(cat);
     }
   </script>
 

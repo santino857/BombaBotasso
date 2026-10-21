@@ -1049,7 +1049,51 @@ img { display: block; max-width: 100%; }
   justify-content: center;
   gap: 0.6rem;
   flex-wrap: wrap;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+.productos-search-wrap {
+  max-width: 520px;
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+  width: 100%;
+  padding: 0 1rem;
+}
+.productos-search-input {
+  width: 100%;
+  padding: 0.7rem 1.25rem 0.7rem 2.8rem;
+  border-radius: 50px;
+  border: 1.5px solid var(--gris-cl);
+  background: var(--blanco);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  outline: none;
+  transition: all var(--trans);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.productos-search-input:focus {
+  border-color: var(--rojo);
+  box-shadow: 0 4px 14px rgba(192, 57, 43, 0.15);
+}
+.productos-search-icon {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gris-med);
+  pointer-events: none;
+}
+.producto-code-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--rojo);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 .filter-btn {
   background: var(--blanco);

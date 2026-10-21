@@ -9,7 +9,9 @@ class ProductModel extends Model
     protected $table          = 'products';
     protected $primaryKey     = 'id';
     protected $allowedFields   = [
+        'code_int',
         'name',
+        'category',
         'description',
         'price',
         'tag',

@@ -75,7 +75,9 @@ class Admin extends BaseController
         $whatsappMsg = $this->request->getPost('whatsapp_msg') ?: 'Hola! Quisiera consultar por ' . $this->request->getPost('name') . '.';
 
         $this->productModel->insert([
+            'code_int'     => $this->request->getPost('code_int') ? (int) $this->request->getPost('code_int') : null,
             'name'         => trim($this->request->getPost('name')),
+            'category'     => trim($this->request->getPost('category') ?: ''),
             'description'  => trim($this->request->getPost('description') ?: ''),
             'price'        => (float) $this->request->getPost('price'),
             'tag'          => trim($this->request->getPost('tag')),
@@ -95,7 +97,9 @@ class Admin extends BaseController
         }
 
         $this->productModel->update($id, [
+            'code_int'     => $this->request->getPost('code_int') ? (int) $this->request->getPost('code_int') : $product['code_int'],
             'name'         => trim($this->request->getPost('name')),
+            'category'     => trim($this->request->getPost('category') ?: ($product['category'] ?? '')),
             'description'  => trim($this->request->getPost('description') ?: ''),
             'price'        => (float) $this->request->getPost('price'),
             'tag'          => trim($this->request->getPost('tag')),
