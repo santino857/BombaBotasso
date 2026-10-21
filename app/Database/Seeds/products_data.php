@@ -9,7 +9,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 11500.00,
         'description' => 'Corte tierno, jugoso y marmoleado. Ideal para preparar a la parrilla, al horno o al disco.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Bondiola (Cód 1).'
     ],
     [
@@ -19,7 +19,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 9000.00,
         'description' => 'Corte magro y sabroso de cerdo con hueso, perfecto para hornear o hacer a la plancha.',
-        'image'       => 'costeleta-cerdo-reduced.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Carré con hueso (Cód 2).'
     ],
     [
@@ -29,7 +29,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 9500.00,
         'description' => 'Lomo de cerdo 100% magro y sin hueso, de cocción rápida y textura suave.',
-        'image'       => 'costeleta-cerdo-reduced.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Carré Deshuesado (Cód 3).'
     ],
     [
@@ -39,7 +39,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 8500.00,
         'description' => 'Costeletas frescas cortadas a pedido, clásicas y jugosas para el almuerzo diario o parrilla.',
-        'image'       => 'costeleta-cerdo-reduced.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Costeletas de cerdo (Cód 4).'
     ],
     [
@@ -49,7 +49,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 10000.00,
         'description' => 'Costillar de cerdo fresco con excelente proporción de carne. La estrella del asado de fin de semana.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Costilla de cerdo (Cód 5).'
     ],
     [
@@ -59,7 +59,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 5500.00,
         'description' => 'Corte rendidor y lleno de sabor, ideal para guisos, estofados o a la parrilla con fuego lento.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Falda de cerdo (Cód 6).'
     ],
     [
@@ -69,7 +69,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 3000.00,
         'description' => 'Selección de huesitos de cerdo, patitas y cuero fresco, ideales para pucheros, porotos y locros.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Huesitos, Patitas y Cuero (Cód 7).'
     ],
     [
@@ -79,7 +79,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 11500.00,
         'description' => 'Solomillo de cerdo fresco, el corte más suave y tierno, excelente para bifecitos o medallones.',
-        'image'       => 'costeleta-cerdo-reduced.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Lomitos Fresco (Cód 8).'
     ],
     [
@@ -89,7 +89,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 18500.00,
         'description' => 'Matambre de cerdo tierno y seleccionado. Imperdible a la pizza, al limón o a la parrilla.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Matambre de Cerdo (Cód 9).'
     ],
     [
@@ -99,7 +99,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 8000.00,
         'description' => 'Corte rendidor y con mucho sabor, perfecto para plancha, horno o guisados caseros.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Marucha (Cód 10).'
     ],
     [
@@ -109,7 +109,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 11000.00,
         'description' => 'Pieza magra y compacta, perfecta para preparar vitel toné, al escabeche o mechado al horno.',
-        'image'       => 'costeleta-cerdo-reduced.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Peceto de Cerdo (Cód 11).'
     ],
     [
@@ -119,7 +119,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 5500.00,
         'description' => 'Cortes surtidos con hueso para caldos y ollas sustanciosas llenas de sabor tradicional.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Puchero de cerdo (Cód 12).'
     ],
     [
@@ -129,7 +129,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 11000.00,
         'description' => 'Corte parejo y versátil, ideal para bifes tiernos, milanesas o asar entero.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Tapa de Nalga (Cód 13).'
     ],
     [
@@ -139,7 +139,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 15000.00,
         'description' => 'Pieza tierna con excelente terneza para horno, asador o preparaciones desmenuzadas.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Tapa de Paleta (Cód 14).'
     ],
     [
@@ -149,7 +149,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 11500.00,
         'description' => 'Corte parrillero por excelencia con grasa justa que le otorga terneza y dorado único.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Tapa de Asado (Cód 15).'
     ],
     [
@@ -159,7 +159,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 9000.00,
         'description' => 'Corte jugoso con cuerito crujiente para hacer a la parrilla a fuego medio.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Vacío de Cerdo (Cód 16).'
     ],
     [
@@ -169,7 +169,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 11500.00,
         'description' => 'Carne limpia y sin hueso de primera calidad, lista para cortar en bifes, cubos o milanesas.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pulpa de cerdo (Cód 17).'
     ],
     [
@@ -179,7 +179,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 6500.00,
         'description' => 'Recortes seleccionados de carne de cerdo frescos para picar, estofados o rellenos.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Carne Chica (Cód 25).'
     ],
     [
@@ -189,7 +189,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 4000.00,
         'description' => 'Tocino de cerdo fresco y firme, ideal para embutir, salar o aportar sabor a comidas criollas.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Tocino (Cód 26).'
     ],
     [
@@ -199,7 +199,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 6750.00,
         'description' => 'Pata trasera entera de cerdo con cuero, clásica para hornear entera o despostar.',
-        'image'       => 'mayot.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Jamón con Cuero (Cód 27).'
     ],
     [
@@ -209,7 +209,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 7250.00,
         'description' => 'Jamón fresco de cerdo desgrasado superficialmente, muy rendidor para horno o milanesas.',
-        'image'       => 'mayot.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Jamón sin Cuero (Cód 28).'
     ],
     [
@@ -219,7 +219,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 10000.00,
         'description' => 'Costeletas fileteadas especialmente para preparar ricas milanesas tiernas y crujientes.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Costeletas en Milanesas (Cód 29).'
     ],
     [
@@ -229,7 +229,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 10700.00,
         'description' => 'Mondongo fresco y bien lavado, ideal para cazuelas, guiso de mondongo y locro criollo.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Mondongo (Cód 43).'
     ],
     [
@@ -239,7 +239,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 6300.00,
         'description' => 'Tripa seleccionada para hacer a la parrilla bien crocante o para rellenar.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Tripa Gorda (Cód 44).'
     ],
     [
@@ -249,7 +249,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 16000.00,
         'description' => 'Lechón fresco seleccionado entero o por mitades, tierno y con cuero crocante para fiestas y asados.',
-        'image'       => 'mayot.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera encargar Lechón fresco (Cód 45).'
     ],
     [
@@ -259,7 +259,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 15000.00,
         'description' => 'Cordero de primera calidad, sabor suave y carne tierna para cocinar a la cruz o parrilla.',
-        'image'       => 'mayot.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera encargar Cordero (Cód 46).'
     ],
     [
@@ -269,7 +269,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 15000.00,
         'description' => 'Cabrito serrano cordobés de carne blanca y delicada, perfecto al horno de barro o asador.',
-        'image'       => 'mayot.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera encargar Cabrito (Cód 47).'
     ],
     [
@@ -279,7 +279,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 8500.00,
         'description' => 'Carne de cerdo picada fresca en el día, ideal para hamburguesas, albóndigas, empanadas y salsas.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Carne Picada fresca (Cód 60).'
     ],
     [
@@ -289,7 +289,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 9500.00,
         'description' => 'Cortes gruesos de bondiola con hueso, jugosos y con el marmoleado perfecto para las brasas.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Chuletones de Bondiola (Cód 63).'
     ],
     [
@@ -299,7 +299,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 9500.00,
         'description' => 'Marucha limpia sin hueso, tierna y fácil de cocinar al horno o la cacerola.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Marucha Deshuesada (Cód 64).'
     ],
     [
@@ -309,7 +309,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 8500.00,
         'description' => 'Lengua vacuna fresca para hervir y preparar a la vinagreta o escabechada.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Lenguas de Vaca (Cód 65).'
     ],
     [
@@ -319,7 +319,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 290.00,
         'description' => 'Media res fresca de capón faenada bajo estrictos controles sanitarios para venta mayorista.',
-        'image'       => 'mayot.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera consultar por Media Res Capón (Cód 300).'
     ],
     [
@@ -329,7 +329,7 @@ $productsData = [
         'tag'         => 'Cortes',
         'price'       => 200.00,
         'description' => 'Media res porcina chancha fresca para desposte y elaboración de embutidos o chacinados.',
-        'image'       => 'mayot.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera consultar por Media Res Chancha (Cód 301).'
     ],
 
@@ -341,7 +341,7 @@ $productsData = [
         'tag'         => 'Embutidos',
         'price'       => 10800.00,
         'description' => 'Chorizos frescos de pura carne de cerdo con especias secretas, el clásico infaltable de la parrilla.',
-        'image'       => 'img 3.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Chorizos Parrilleros (Cód 18).'
     ],
     [
@@ -351,7 +351,7 @@ $productsData = [
         'tag'         => 'Embutidos',
         'price'       => 10800.00,
         'description' => 'Chorizos condimentados con pimentón dulce y picante seleccionado, ideales para guisados y lentejas.',
-        'image'       => 'img 3.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Chorizos Colorados (Cód 19).'
     ],
     [
@@ -361,7 +361,7 @@ $productsData = [
         'tag'         => 'Embutidos',
         'price'       => 9000.00,
         'description' => 'Chorizos tradicionales elaborados con carne de cerdo y condimentos de receta de campo.',
-        'image'       => 'img 3.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Chorizos de Cune (Cód 20).'
     ],
     [
@@ -371,7 +371,7 @@ $productsData = [
         'tag'         => 'Embutidos',
         'price'       => 9000.00,
         'description' => 'Morcillas cremosas y bien sazonadas de producción propia, deliciosas tibias o doradas a la parrilla.',
-        'image'       => 'morcilla.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Morcillas Artesanales (Cód 21).'
     ],
     [
@@ -381,7 +381,7 @@ $productsData = [
         'tag'         => 'Embutidos',
         'price'       => 11500.00,
         'description' => 'Salchicha en rueda con tripa fina natural y carne de cerdo magra, crocante y sabrosa a las brasas.',
-        'image'       => 'img 3.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Salchicha Parrillera (Cód 22).'
     ],
 
@@ -393,7 +393,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 23000.00,
         'description' => 'Salame tradicional de picado grueso estacionado y curado a punto justo, sabor casero intenso.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Salame 2° (Cód 30).'
     ],
     [
@@ -403,7 +403,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 29000.00,
         'description' => 'Salame tipo Colonia Caroya de primera selección con tocino picado fino y maduración óptima.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Salame 1° (Cód 31).'
     ],
     [
@@ -413,7 +413,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 30000.00,
         'description' => 'Salame de primera envasado al vacío para conservar toda su frescura, aroma y bouquet intactos.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Salame Envasado (Cód 32).'
     ],
     [
@@ -423,7 +423,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 28000.00,
         'description' => 'Bondiola de cerdo curada y estacionada con pimienta negra y especias, textura suave y untuosa.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Bondiola Fiambre (Cód 33).'
     ],
     [
@@ -433,7 +433,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 23000.00,
         'description' => 'Lomito curado a la sal con hierbas aromáticas, magro y delicado al paladar para picadas selectas.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Lomito Salado (Cód 34).'
     ],
     [
@@ -443,7 +443,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 9200.00,
         'description' => 'Salame tipo Milán en fetas o por pieza, suave y clásico para sándwiches y picadas familiares.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Salame Milán (Cód 37).'
     ],
     [
@@ -453,7 +453,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 5700.00,
         'description' => 'Jamón cocido natural de primera calidad, bajo en grasas, ideal para tostados y sándwiches.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Jamón Cocido (Cód 38).'
     ],
     [
@@ -463,7 +463,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 10500.00,
         'description' => 'Elaborado tradicional con cabeza y recortes sazonados al vinagre y hierbas, una delicia criolla.',
-        'image'       => 'morcilla.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Queso de Cerdo (Cód 39).'
     ],
     [
@@ -473,7 +473,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 30200.00,
         'description' => 'Panceta de cerdo curada a la sal, ideal para cortar en lonchas finas o dorar crocante.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Panceta Salada (Cód 40).'
     ],
     [
@@ -483,7 +483,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 30200.00,
         'description' => 'Panceta ahumada con maderas naturales que le aportan un aroma y sabor ahumado inconfundible.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Panceta Ahumada (Cód 41).'
     ],
     [
@@ -493,7 +493,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 820.00,
         'description' => 'Pernil de cerdo cocido, tierno y sabroso para tablas de fiambres, recepciones o aperitivos.',
-        'image'       => 'mayot.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pernil de Cerdo (Cód 51).'
     ],
     [
@@ -503,7 +503,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 1050.00,
         'description' => 'Clásica mortadela Paladini con especias, textura fina y el toque perfecto para la picada.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Mortadela Paladini (Cód 52).'
     ],
     [
@@ -513,7 +513,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 0.00,
         'description' => 'Jamón cocido de excelencia Grassetto, consistencia firme y sabor suave. Consultar precio.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera consultar precio de Jamón Cocido Grassetto (Cód 57).'
     ],
     [
@@ -523,7 +523,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 0.00,
         'description' => 'Salame tipo Milán de calidad premium marca Lario, estacionado a gusto. Consultar precio.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera consultar precio de Salame Milán Lario (Cód 58).'
     ],
     [
@@ -533,7 +533,7 @@ $productsData = [
         'tag'         => 'Fiambres',
         'price'       => 22100.00,
         'description' => 'Jamón crudo de larga maduración, sabor profundo y salazón equilibrada para ocasiones especiales.',
-        'image'       => 'salames.gif',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Jamón Crudo (Cód 59).'
     ],
 
@@ -545,7 +545,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 11500.00,
         'description' => 'Milanesas y medallones empanados artesanalmente con pan rallado crujiente, listos para freír u hornear.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Rebozados (Cód 23).'
     ],
     [
@@ -555,7 +555,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 15000.00,
         'description' => 'Escabeche casero con verduras frescas y condimentos en frasco, listo para disfrutar en la mesa.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Escabeche Casero (Cód 24).'
     ],
     [
@@ -565,7 +565,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 15500.00,
         'description' => 'Peceto mechado y relleno con jamón, queso, morrón y huevo, listo para lucirte al horno.',
-        'image'       => 'costeleta-cerdo-reduced.webp',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pecetos Rellenos (Cód 42).'
     ],
     [
@@ -575,7 +575,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 8000.00,
         'description' => 'Chicharrones de cerdo dorados y crujientes, ideales para tortas fritas, pan casero o picoteo.',
-        'image'       => 'morcilla.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Chicharrón (Cód 48).'
     ],
     [
@@ -585,7 +585,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 4000.00,
         'description' => 'Grasa pura refinada para frituras de empanadas, panes criollos y repostería tradicional.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Grasa por Unidad (Cód 49).'
     ],
     [
@@ -595,7 +595,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 8500.00,
         'description' => 'Lenguas tiernizadas y hervidas al punto justo, listas para condimentar a la vinagreta.',
-        'image'       => 'img 2.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Lenguas Cocidas (Cód 53).'
     ],
     [
@@ -605,7 +605,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 13500.00,
         'description' => 'Brochettes armadas con cubos tiernos de cerdo, panceta, morrón y cebolla para plancha o parrilla.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Brochette (Cód 70).'
     ],
     [
@@ -615,7 +615,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 11000.00,
         'description' => 'Nuggets y bocaditos tiernos de pechuga de pollo rebozados, ideales para los chicos.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Bocaditos de Pollo (Cód 320).'
     ],
     [
@@ -625,7 +625,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 10000.00,
         'description' => 'Bocaditos de pollo rellenos de abundante jamón cocido y queso derretido con costra crocante.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Bocaditos de Pollo con Jamón y Queso (Cód 321).'
     ],
     [
@@ -635,7 +635,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 22700.00,
         'description' => 'Tiras crocantes de suprema empanadas y condimentadas, súper prácticas y deliciosas.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Palitos de Pollo (Cód 322).'
     ],
     [
@@ -645,7 +645,7 @@ $productsData = [
         'tag'         => 'Preparados',
         'price'       => 9500.00,
         'description' => 'Conserva gourmet de verduras seleccionadas con un sutil y delicioso toque ahumado.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Escabeche Verduras Ahumadas (Cód 509).'
     ],
 
@@ -657,7 +657,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 13200.00,
         'description' => 'Queso de pasta semidura Noal, ideal para cortar en lonchas parejas para tostados y sándwiches.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Queso Noal Tybo (Cód 50).'
     ],
     [
@@ -667,7 +667,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 17900.00,
         'description' => 'Queso artesanal con agregado de hierbas finas, orégano o ají, estrella indiscutida de la picada.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Queso Saborizado (Cód 54).'
     ],
     [
@@ -677,7 +677,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 11000.00,
         'description' => 'Queso cuartirolo cremoso de primera calidad que funde a la perfección en pizzas y tartas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Queso Noal Cremoso (Cód 55).'
     ],
     [
@@ -687,7 +687,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 0.00,
         'description' => 'Queso suave y elástico de mesa Noal, excelente para acompañar tablas de fiambres. Consultar precio.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera consultar precio de Queso Noal Dambo (Cód 56).'
     ],
     [
@@ -697,7 +697,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 23500.00,
         'description' => 'Queso provolone hilado especial para dorar a la parrilla con orégano y ají molido.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Provoleta parrillera (Cód 61).'
     ],
     [
@@ -707,7 +707,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 22100.00,
         'description' => 'Queso de pasta dura y sabor intenso, madurado para rallar sobre tus mejores pastas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Queso Regianito (Cód 62).'
     ],
     [
@@ -717,7 +717,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 23300.00,
         'description' => 'Queso tipo Gouda Holanda con ojos bien definidos y sabor característico de Arroyo Cabral.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Queso Holanda Arroyo Cabral (Cód 66).'
     ],
     [
@@ -727,7 +727,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 26400.00,
         'description' => 'Queso fontina suave Fymbo de receta especial cordobesa, consistencia cremosa y aromática.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Queso Fymbo Arroyo Cabral (Cód 67).'
     ],
     [
@@ -737,7 +737,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 21280.00,
         'description' => 'Auténtico queso Fontina cordobés de masa elástica y sabor ligeramente picante al final.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Queso Fontina Arroyo Cabral (Cód 68).'
     ],
     [
@@ -747,7 +747,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 3600.00,
         'description' => 'Aceite de oliva virgen extra de primera prensada en frío, bouquet frutado para ensaladas y cocina.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Aceite Oliva Valle de Arauco 500ml (Cód 103).'
     ],
     [
@@ -757,7 +757,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 4500.00,
         'description' => 'Dulce de leche artesanal estilo colonial, textura cremosa e inconfundible sabor tradicional.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Dulce de Leche (Cód 126).'
     ],
     [
@@ -767,7 +767,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 6500.00,
         'description' => 'Miel pura de abejas de monte cordobés, sin aditivos ni conservantes, 100% natural.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Miel x 500g (Cód 127).'
     ],
     [
@@ -777,7 +777,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 11200.00,
         'description' => 'Pote familiar de 1 kg de miel pura cosechada en las sierras de Córdoba.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Miel x 1000g (Cód 128).'
     ],
     [
@@ -787,7 +787,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 1800.00,
         'description' => 'Maní cordobés tostado crocante, el acompañamiento perfecto para la previa del asado.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Maní x 500g (Cód 133).'
     ],
     [
@@ -797,7 +797,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 1600.00,
         'description' => 'Milanesas de soja listas para dorar, livianas y saludables para acompañar con ensalada.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Milanesas de Soja (Cód 134).'
     ],
     [
@@ -807,7 +807,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 1500.00,
         'description' => 'Huevos frescos seleccionados de granja para todas tus preparaciones de cocina.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Huevos x 6 (Cód 136).'
     ],
     [
@@ -817,7 +817,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 1000.00,
         'description' => 'Pancitos franceses crujientes recién horneados, ideales para sándwiches de chorizo y bondiola.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pan Francés (Cód 137).'
     ],
     [
@@ -827,7 +827,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 4600.00,
         'description' => 'Tradicional pan casero con grasa de campo, miga suave y corteza dorada.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pan Casero (Cód 138).'
     ],
     [
@@ -837,7 +837,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 2500.00,
         'description' => 'Maní confitado acaramelado artesanalmente, crocante y dulce tentación cordobesa.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Praliné (Cód 157).'
     ],
     [
@@ -847,7 +847,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 4000.00,
         'description' => 'Mix refrescante de frutas de estación peladas y cortadas en almíbar liviano.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ensalada de Fruta (Cód 158).'
     ],
     [
@@ -857,7 +857,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 5200.00,
         'description' => 'Bolitas crocantes de puré de papas para hornear o freír y acompañar tus carnes.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Papas Noissette x 250gr (Cód 318).'
     ],
     [
@@ -867,7 +867,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 2000.00,
         'description' => 'Papas cortadas en bastones congeladas para freír bien crocantes en minutos.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Papas Bastón x 250gr (Cód 319).'
     ],
     [
@@ -877,7 +877,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 4000.00,
         'description' => 'Ensalada fresca y lista para servir con ingredientes de huerta seleccionados.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ensalada Sole (Cód 503).'
     ],
     [
@@ -887,7 +887,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 6000.00,
         'description' => 'Ensalada cocida casera de verduras tiernas cortadas a mano, lista para condimentar.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ensalada Cocida Lili (Cód 504).'
     ],
     [
@@ -897,7 +897,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 2000.00,
         'description' => 'Porción individual de ensalada fresca del día para acompañar tu menú.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ensalada Chica Lili (Cód 505).'
     ],
     [
@@ -907,7 +907,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 3000.00,
         'description' => 'Porción familiar de ensaladas frescas y variadas para compartir en la mesa.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ensalada Grande Lili (Cód 506).'
     ],
     [
@@ -917,7 +917,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 6000.00,
         'description' => 'Clásica ensalada rusa de papa, zanahoria y mayonesa con perejil fresco picado.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ensalada Rusa / Perejil (Cód 507).'
     ],
     [
@@ -927,7 +927,7 @@ $productsData = [
         'tag'         => 'Despensa',
         'price'       => 4200.00,
         'description' => 'Sopa casera reconfortante elaborada con caldo natural y verduras frescas de temporada.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sopa Lili (Cód 508).'
     ],
 
@@ -939,7 +939,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 490.00,
         'description' => 'Canelones rellenos de pollo desmenuzado suave con salsa bechamel, listos para gratinar.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Canelones de Pollo (Cód 402).'
     ],
     [
@@ -949,7 +949,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 0.00,
         'description' => 'Canelones caseros rellenos de carne picada sazonada y espinaca, un manjar de domingo. Consultar precio.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera consultar precio de Canelones de Carne (Cód 403).'
     ],
     [
@@ -959,7 +959,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 640.00,
         'description' => 'Ravioles caseros de masa fina al huevo rellenos de pollo sazonado con verduras.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ravioles de Pollo (Cód 404).'
     ],
     [
@@ -969,7 +969,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 640.00,
         'description' => 'Ravioles artesanales rellenos de carne braseada y condimentos caseros.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ravioles de Carne (Cód 405).'
     ],
     [
@@ -979,7 +979,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 250.00,
         'description' => 'Salsa clásica de tomate cocida lentamente con carne picada de primera y especias.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Salsa Bolognesa (Cód 406).'
     ],
     [
@@ -989,7 +989,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 200.00,
         'description' => 'Salsa suave de tomates maduros, ajo, cebolla y albahaca fresca para pastas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Salsa Filetto (Cód 407).'
     ],
     [
@@ -999,7 +999,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 250.00,
         'description' => 'Crema suave con hongos seleccionados, perfecta para realzar pastas rellenas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Salsa de Hongos (Cód 408).'
     ],
     [
@@ -1009,7 +1009,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 8400.00,
         'description' => 'Empanadas criollas de matambre tierno cortado a cuchillo con cebolla de verdeo y huevo.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Empanadas de Matambre (Cód 409).'
     ],
     [
@@ -1019,7 +1019,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 7000.00,
         'description' => 'Surtido de empanadas caseras al horno de carne suave, jamón y queso o pollo.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Empanadas Varias (Cód 410).'
     ],
     [
@@ -1029,7 +1029,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 5700.00,
         'description' => 'Tarta horneada con masa casera rellena de acelga, espinaca fresca, huevo y queso.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Tarta de Verdura (Cód 411).'
     ],
     [
@@ -1039,7 +1039,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 6400.00,
         'description' => 'Deliciosa tarta de pollo desmenuzado con morrones y crema con masa bien hojaldrada.',
-        'image'       => 'milanesas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Tarta de Pollo (Cód 412).'
     ],
     [
@@ -1049,7 +1049,7 @@ $productsData = [
         'tag'         => 'Pastas',
         'price'       => 145.00,
         'description' => 'Sorrentinos gigantes de masa al huevo con abundante relleno de jamón cocido y mozzarella.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sorrentinos de Jamón y Queso (Cód 414).'
     ],
 
@@ -1061,7 +1061,7 @@ $productsData = [
         'tag'         => 'Parrilla',
         'price'       => 3900.00,
         'description' => 'Bolsa de 3 kg de carbón vegetal de quebracho blanco de encendido rápido y excelente brasa.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Carbón x 3 kg (Cód 130).'
     ],
     [
@@ -1071,7 +1071,7 @@ $productsData = [
         'tag'         => 'Parrilla',
         'price'       => 5600.00,
         'description' => 'Bolsa rendidora de 5 kg de carbón de quebracho seleccionado para asados largos.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Carbón x 5 kg (Cód 131).'
     ],
     [
@@ -1081,7 +1081,7 @@ $productsData = [
         'tag'         => 'Parrilla',
         'price'       => 4200.00,
         'description' => 'Bolsa de leña seca de espinillo y piquillín lista para dar calor y aroma ahumado.',
-        'image'       => 'costillas.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Leña Bolsa (Cód 132).'
     ],
     [
@@ -1091,7 +1091,7 @@ $productsData = [
         'tag'         => 'Parrilla',
         'price'       => 0.00,
         'description' => 'Vino tinto de selección especial para maridar con carnes rojas y cortes de cerdo. Consultar precio.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera consultar precio de Vino Tinto (Cód 216).'
     ],
     [
@@ -1101,7 +1101,7 @@ $productsData = [
         'tag'         => 'Parrilla',
         'price'       => 0.00,
         'description' => 'Vino blanco Santa Julia Chenin Dulce Natural, fresco y frutado para tablas de quesos. Consultar precio.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera consultar precio de Vino Santa Julia Chenin (Cód 309).'
     ],
 
@@ -1113,7 +1113,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 2500.00,
         'description' => 'Sal parrillera gruesa y pura de campo para sazonar tus carnes al punto justo.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sal de Campo x 250g (Cód 124).'
     ],
     [
@@ -1123,7 +1123,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 330.00,
         'description' => 'Sal fina de mesa de máxima pureza para cocinar todos los días.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sal Premium La Josefina x 200g (Cód 125).'
     ],
     [
@@ -1133,7 +1133,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 3450.00,
         'description' => 'Mezcla gourmet de sal gruesa con pimienta negra, blanca, rosa, verde y de Jamaica.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sal de Campo 5 Pimientas (Cód 141).'
     ],
     [
@@ -1143,7 +1143,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 140.00,
         'description' => 'Hojas secas de orégano serrano aromático para pizzas, chimichurri y carnes.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Orégano (Cód 142).'
     ],
     [
@@ -1153,7 +1153,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 225.00,
         'description' => 'Clásica mezcla deshidratada de ajo picado y perejil fresco para milanesas o papas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Provenzal (Cód 143).'
     ],
     [
@@ -1163,7 +1163,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 440.00,
         'description' => 'Pimienta blanca de molienda fina para sazonar salsas blancas, carnes y rellenos.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pimienta Blanca Molida (Cód 144).'
     ],
     [
@@ -1173,7 +1173,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 390.00,
         'description' => 'Granos enteros de pimienta blanca para molinillo o adobos prolongados.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pimienta Blanca Entera (Cód 145).'
     ],
     [
@@ -1183,7 +1183,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 350.00,
         'description' => 'Pimienta negra aromática y picante recién molida para carnes asadas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pimienta Negra Molida (Cód 146).'
     ],
     [
@@ -1193,7 +1193,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 560.00,
         'description' => 'Granos seleccionados de pimienta negra para moler al instante o para salazones.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pimienta Negra en Grano (Cód 147).'
     ],
     [
@@ -1203,7 +1203,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 150.00,
         'description' => 'Comino puro de aroma intenso para empanadas criollas y guisados tradicionales.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Comino (Cód 148).'
     ],
     [
@@ -1213,7 +1213,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 234.00,
         'description' => 'Pimentón dulce puro de color rojo intenso para adobos y salsas caseras.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Pimentón (Cód 149).'
     ],
     [
@@ -1223,7 +1223,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 90.00,
         'description' => 'Hojas enteras de laurel aromático para estofados, salsas y caldos.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Laurel (Cód 150).'
     ],
     [
@@ -1233,7 +1233,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 140.00,
         'description' => 'Mezcla especial de orégano, ají molido y albahaca para espolvorear sobre quesos.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Condimento para Pizza (Cód 151).'
     ],
     [
@@ -1243,7 +1243,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 250.00,
         'description' => 'Ají picante molido tradicional, infaltable para el chimichurri y los cortes a la parrilla.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ají Molido (Cód 152).'
     ],
     [
@@ -1253,7 +1253,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 530.00,
         'description' => 'Nuez moscada aromática para rallar en bechamel, purés y rellenos de pastas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Nuez Moscada (Cód 153).'
     ],
     [
@@ -1263,7 +1263,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 80.00,
         'description' => 'Romero aromático de monte, perfecto para aromatizar carnes de cerdo al horno.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Romero (Cód 154).'
     ],
     [
@@ -1273,7 +1273,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 130.00,
         'description' => 'Ajo deshidratado en polvo fino para adobar carnes de manera rápida y homogénea.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Ajo en Polvo (Cód 155).'
     ],
     [
@@ -1283,7 +1283,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 150.00,
         'description' => 'Mix completo de hierbas y especias para condimentar todo tipo de comidas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Especies Surtidas (Cód 156).'
     ],
     [
@@ -1293,7 +1293,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 3250.00,
         'description' => 'Sal aromatizada con humo natural de leñas para darle sabor a asador a cualquier corte.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sal de Campo Ahumada (Cód 312).'
     ],
     [
@@ -1303,7 +1303,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 920.00,
         'description' => 'Sal reducida en sodio para disfrutar del sabor de las comidas cuidando la salud.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sal de Campo Light (Cód 313).'
     ],
     [
@@ -1313,7 +1313,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 4800.00,
         'description' => 'Condimento especial con sal entrefina, ajo y finas hierbas para cortes a la parrilla.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sal de Campo Especial (Cód 323).'
     ],
     [
@@ -1323,7 +1323,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 2130.00,
         'description' => 'Salsa chimichurri Vanoli con sutil toque a humo de leña, excelente para carnes asadas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Vanoli Chimi Ahumado (Cód 324).'
     ],
     [
@@ -1333,7 +1333,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 2130.00,
         'description' => 'El tradicional chimichurri argentino con finas hierbas y vinagre, infaltable en el asado.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Vanoli Chimi Clásico (Cód 325).'
     ],
     [
@@ -1343,7 +1343,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 2130.00,
         'description' => 'Chimichurri con ajíes seleccionados para quienes prefieren un toque picante y sabroso.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Vanoli Chimi Picante (Cód 326).'
     ],
     [
@@ -1353,7 +1353,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 2130.00,
         'description' => 'Salsa criolla con cebolla, morrón y vinagre para bañar chorizos y carnes recién asadas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Vanoli Salsa Criolla (Cód 327).'
     ],
     [
@@ -1363,7 +1363,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 2130.00,
         'description' => 'Salsa emulsionada de ají suave, gran sabor sin picor invasivo.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Vanoli Ají Suave (Cód 328).'
     ],
     [
@@ -1373,7 +1373,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 2130.00,
         'description' => 'Aderezo líquido de ajo y perejil listo para condimentar bifes, milanesas y ensaladas.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Vanoli Provenzal (Cód 329).'
     ],
     [
@@ -1383,7 +1383,7 @@ $productsData = [
         'tag'         => 'Condimentos',
         'price'       => 1520.00,
         'description' => 'Sal marina y de campo fina, ideal para ensaladas y guisados caseros.',
-        'image'       => '20250123092314_todobr.jpg',
+        'image'       => null,
         'whatsapp_msg'=> 'Hola! Quisiera pedir Sal de Campo Fina (Cód 413).'
     ]
 ];

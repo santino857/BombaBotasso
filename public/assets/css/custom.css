@@ -1082,71 +1082,34 @@ img { display: block; max-width: 100%; }
   color: var(--gris-med);
   pointer-events: none;
 }
-.producto-code-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: var(--rojo);
-  color: #ffffff;
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-}
-.filter-btn {
-  background: var(--blanco);
-  border: 1.5px solid var(--gris-cl);
-  color: var(--gris-osc);
-  padding: 0.45rem 1.2rem;
-  border-radius: 50px;
-  font-family: var(--font-body);
-  font-size: 0.88rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--trans);
-}
-.filter-btn:hover, .filter-btn.active {
-  background: var(--rojo);
-  color: var(--blanco);
-  border-color: var(--rojo);
-  box-shadow: 0 4px 14px rgba(192, 57, 43, 0.25);
-}
-
-/* --- CARDS DE PRODUCTOS MEJORADAS --- */
-.producto-img-container {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 1.2rem;
-  background: #f0e6dc;
-}
-.producto-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-.producto-card:hover .producto-img-container img {
-  transform: scale(1.06);
+.producto-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed var(--gris-cl);
 }
 .producto-tag-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(26,16,8,0.85);
-  backdrop-filter: blur(4px);
-  color: var(--dorado-cl);
+  background: var(--rojo-suave);
+  color: var(--rojo-osc);
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.25rem 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.75rem;
   border-radius: 50px;
-  border: 1px solid rgba(200, 149, 44, 0.4);
+  border: 1px solid rgba(192, 57, 43, 0.2);
+}
+.producto-code-badge {
+  background: #f8f4ee;
+  color: var(--marron);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid #e2d7cb;
+  letter-spacing: 0.5px;
 }
 .producto-card-body {
   display: flex;

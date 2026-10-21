@@ -90,11 +90,7 @@
                    data-name="<?= esc(mb_strtolower($prod['name'], 'UTF-8')) ?>" 
                    data-desc="<?= esc(mb_strtolower($prod['description'] ?? '', 'UTF-8')) ?>"
                    data-code="<?= esc($prod['code_int'] ?? '') ?>">
-            <div class="producto-img-container">
-              <?php 
-                $imgSrc = !empty($prod['image']) ? base_url('assets/img/' . $prod['image']) : base_url('assets/img/img 2.jpg');
-              ?>
-              <img src="<?= $imgSrc ?>" alt="<?= esc($prod['name']) ?>" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80';" />
+            <div class="producto-card-top">
               <span class="producto-tag-badge"><?= esc($prod['tag']) ?></span>
               <?php if (!empty($prod['code_int'])): ?>
                 <span class="producto-code-badge">Cód. #<?= esc($prod['code_int']) ?></span>

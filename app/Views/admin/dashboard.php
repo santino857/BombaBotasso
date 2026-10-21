@@ -93,7 +93,6 @@
               <tr>
                 <th>ID</th>
                 <th>Cód.</th>
-                <th>Imagen</th>
                 <th>Nombre</th>
                 <th>Categoría / Tag</th>
                 <th>Precio aprox.</th>
@@ -107,12 +106,6 @@
                   <tr>
                     <td>#<?= $p['id'] ?></td>
                     <td><strong><?= esc($p['code_int'] ?? '-') ?></strong></td>
-                    <td>
-                      <img src="<?= base_url('assets/img/' . $p['image']) ?>" 
-                           alt="<?= esc($p['name']) ?>" 
-                           class="admin-thumb" 
-                           onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=100&q=80';" />
-                    </td>
                     <td>
                       <strong><?= esc($p['name']) ?></strong>
                       <?php if (!empty($p['category'])): ?>
@@ -482,10 +475,6 @@
             <option value="Artesanal">Artesanal</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="prodImage">Nombre de Imagen</label>
-          <input type="text" id="prodImage" name="image" placeholder="Ej: img 2.jpg o URL" />
-        </div>
       </div>
 
       <div class="form-group">
@@ -559,7 +548,6 @@
     document.getElementById('prodCategory').value = p.category || '';
     document.getElementById('prodPrice').value = p.price;
     document.getElementById('prodTag').value = p.tag;
-    document.getElementById('prodImage').value = p.image || '';
     document.getElementById('prodDesc').value = p.description || '';
     document.getElementById('prodWhatsapp').value = p.whatsapp_msg || '';
     document.getElementById('prodActive').checked = p.active == 1;
