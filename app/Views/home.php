@@ -380,6 +380,7 @@
 
         if (matchesCat && matchesQuery) {
           card.style.display = 'flex';
+          card.classList.add('visible');
         } else {
           card.style.display = 'none';
         }

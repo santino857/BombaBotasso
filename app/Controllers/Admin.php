@@ -71,7 +71,7 @@ class Admin extends BaseController
             return redirect()->back()->withInput()->with('error', 'Por favor verifica los datos del producto.');
         }
 
-        $imageName = $this->request->getPost('image') ?: 'img 2.jpg';
+        $imageName = $this->request->getPost('image') ?: null;
         $whatsappMsg = $this->request->getPost('whatsapp_msg') ?: 'Hola! Quisiera consultar por ' . $this->request->getPost('name') . '.';
 
         $this->productModel->insert([
