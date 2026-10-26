@@ -28,7 +28,7 @@ class CreateInitialTables extends Migration
                 ],
                 'password' => [
                     'type'       => 'VARCHAR',
-                    'constraint' => 255,
+                    'constraint' => 256,
                 ],
                 'role' => [
                     'type'       => 'VARCHAR',
